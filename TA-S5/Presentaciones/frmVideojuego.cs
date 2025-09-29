@@ -30,21 +30,21 @@ namespace TA_S5.Presentaciones
 
         public void LimpiarCampos()
         {
-            txtCodigoVideojuego.Clear();
-            txtNombreVideojuego.Clear();
+            tbCodigoVideojuego.Clear();
+            tbNombreVideojuego.Clear();
         }
 
         private void btnRegistrarVideojuego_Click(object sender, EventArgs e)
         {
-            if (txtCodigoVideojuego.Text != "" && txtNombreVideojuego.Text != "")
+            if (tbCodigoVideojuego.Text != "" && tbNombreVideojuego.Text != "")
             {
-                if (objcontrolador.VideojuegoExiste(txtCodigoVideojuego.Text))
+                if (objcontrolador.VideojuegoExiste(tbCodigoVideojuego.Text))
                     MessageBox.Show("El videojuego ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                 {
                     Videojuego videojuego = new Videojuego();
-                    videojuego.Codigo = txtCodigoVideojuego.Text;
-                    videojuego.Nombre = txtNombreVideojuego.Text;
+                    videojuego.Codigo = tbCodigoVideojuego.Text;
+                    videojuego.Nombre = tbNombreVideojuego.Text;
                     objcontrolador.RegistrarVideojuego(videojuego);
                 }
             }
@@ -53,7 +53,7 @@ namespace TA_S5.Presentaciones
 
             MostrarVideojuegos(objcontrolador.ListarTodosLosVideojuegos());
             LimpiarCampos();
-            txtCodigoVideojuego.Focus();
+            tbCodigoVideojuego.Focus();
         }
 
         private void frmVideojuego_Load(object sender, EventArgs e)

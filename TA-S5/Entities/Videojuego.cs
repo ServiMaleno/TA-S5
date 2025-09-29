@@ -10,6 +10,11 @@ namespace TA_S5.Entities
     {
         public string Codigo { get; set; }
         public string Nombre { get; set; }
-        public List<Jugador> Jugadores { get; set; } = new List<Jugador>();
+        public List<Jugador> Jugadores { get; set; } 
+
+        public Videojuego() 
+        {
+            Jugadores = new List<Jugador>();
+        }
     }
 }

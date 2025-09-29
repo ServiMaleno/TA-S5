@@ -11,9 +11,9 @@ using TA_S5.Presentaciones;
 
 namespace TA_S5
 {
-    public partial class Form1 : Form
+    public partial class frmInicio : Form
     {
-        public Form1()
+        public frmInicio()
         {
             InitializeComponent();
         }
@@ -28,6 +28,18 @@ namespace TA_S5
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void registroDeJugadoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmJugador frm = new frmJugador();
+            frm.ShowDialog();
+        }
+
+        private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsulta frm = new frmConsulta();
+            frm.ShowDialog();
         }
     }
 }
