@@ -65,5 +65,16 @@ namespace TA_S5.Presentaciones
         {
             Close();
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            dgvVideojuegos.DataSource = null;
+        }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            dgvVideojuegos.DataSource = null;
+            MostrarVideojuegos(objcontrolador.ListarTodosLosVideojuegos());
+        }
     }
 }

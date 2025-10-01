@@ -40,6 +40,10 @@ namespace TA_S5.Presentaciones
         {
             if (tbDNI.Text != "" && tbAlias.Text != "")
             {
+                if(lboxVideojuegos.Text == "") { 
+                    MessageBox.Show("Seleccione un videojuego", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 Jugador jugador = new Jugador();
                 jugador.DNI = tbDNI.Text;
                 jugador.Alias = tbAlias.Text;

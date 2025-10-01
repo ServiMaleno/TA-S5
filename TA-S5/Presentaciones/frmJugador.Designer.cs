@@ -78,9 +78,9 @@
             // 
             // btnRegistrarJugador
             // 
-            this.btnRegistrarJugador.Location = new System.Drawing.Point(28, 162);
+            this.btnRegistrarJugador.Location = new System.Drawing.Point(28, 156);
             this.btnRegistrarJugador.Name = "btnRegistrarJugador";
-            this.btnRegistrarJugador.Size = new System.Drawing.Size(75, 23);
+            this.btnRegistrarJugador.Size = new System.Drawing.Size(91, 29);
             this.btnRegistrarJugador.TabIndex = 4;
             this.btnRegistrarJugador.Text = "Registrar";
             this.btnRegistrarJugador.UseVisualStyleBackColor = true;
@@ -88,9 +88,9 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(245, 162);
+            this.btnSalir.Location = new System.Drawing.Point(245, 156);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(78, 29);
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;

@@ -120,5 +120,11 @@ namespace TA_S5.Controllers
             }
             return videojuegosTemp;
         }
+
+        public string ObtenerAliasJugador(string dniJugador)
+        {
+            Jugador jugadorEncontrado = ListaDeJugadores.Find(j => j.DNI == dniJugador);
+            return jugadorEncontrado != null ? jugadorEncontrado.Alias : null;
+        }
     }
 }
